@@ -43,4 +43,10 @@ Our project’s success will be measured by the following criteria:
 
 ## Acknowledgments  
 We would like to thank our professor and teaching assistants for their guidance throughout the course, as well as our classmates for fostering a competitive yet supportive learning environment.  
-[![TASK1](https://youtu.be/CyGbVoq0o8E?si=nH3Qhd9uThHUYo_k)](https://youtu.be/CyGbVoq0o8E?si=nH3Qhd9uThHUYo_k)
+<iframe width="560" height="315" 
+src="https://www.youtube.com/embed/YOUTUBE_VIDEO_ID" 
+title="YouTube video player" 
+frameborder="0" 
+allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+allowfullscreen>
+</iframe>

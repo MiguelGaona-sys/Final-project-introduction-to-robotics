@@ -43,4 +43,4 @@ Our project’s success will be measured by the following criteria:
 
 ## Acknowledgments  
 We would like to thank our professor and teaching assistants for their guidance throughout the course, as well as our classmates for fostering a competitive yet supportive learning environment.  
-[![Video Title](https://img.youtube.com/vi/https://youtu.be/CyGbVoq0o8E?si=nH3Qhd9uThHUYo_k/0.jpg)](https://youtu.be/CyGbVoq0o8E?si=nH3Qhd9uThHUYo_k)
+

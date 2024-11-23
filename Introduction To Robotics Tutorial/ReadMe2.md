@@ -43,8 +43,3 @@ Our project’s success will be measured by the following criteria:
 
 ## Acknowledgments  
 We would like to thank our professor and teaching assistants for their guidance throughout the course, as well as our classmates for fostering a competitive yet supportive learning environment.  
-<div align="center">
-  <a href="https://youtu.be/CyGbVoq0o8E?si=BvkL9NOuHQeiCThX">
-    <img src="https://raw.githubusercontent.com/MiguelGaona-sys/Final-project-introduction-to-robotics/main/Introduction%20To%20Robotics%20Tutorial/PNGs/Task1.png" alt="Task 1" style="width:50%; max-width:300px;">
-  </a>
-</div>

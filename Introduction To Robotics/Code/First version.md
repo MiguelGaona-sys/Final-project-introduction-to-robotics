@@ -13,9 +13,6 @@ This project demonstrates the design and simulation of an **Autonomous House-Cle
 
 ---
 
-## Mathematical Model
-The mathematical models used are based on chapters 5 and 6 of the course:
-
 ### 1. **Reactive Navigation**
 - The robot uses sensor-based feedback to adjust its path dynamically.
 - Inspired by Braitenberg Vehicles and simple automata, the robot performs goal-seeking and obstacle avoidance using environmental stimuli.

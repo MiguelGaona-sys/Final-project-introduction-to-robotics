@@ -18,27 +18,6 @@ This is an improved version of the **Autonomous House-Cleaning Robot** project. 
 
 ---
 
-## Mathematical Model
-This implementation still incorporates concepts from **Reactive Navigation** and **Map-Based Planning**, while introducing obstacle avoidance strategies. Key mathematical elements include:
-
-### 1. **Reactive Navigation:**
-   - Obstacle detection is performed using the Euclidean distance formula:
-     \[
-     d = \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}
-     \]
-   - If \(d < D_{\text{min}}\), the robot changes direction by turning at a random angle.
-
-### 2. **Kinematic Model:**
-   - Position updates are calculated using:
-     \[
-     x_{t+1} = x_t + v \cos(\theta) \cdot \Delta t
-     \]
-     \[
-     y_{t+1} = y_t + v \sin(\theta) \cdot \Delta t
-     \]
-
----
-
 ## MATLAB Code
 Below is the MATLAB code implementing the enhanced functionality:
 

@@ -30,15 +30,4 @@
 
 ---
 
-## Electrical Aspects
 
-### **Mobility**
-- **Traction Motors:**
-  - DC Servo-Motors with a power rating of **12V, 3W**.
-  - Capable of handling a load of up to **5 kg** (robot + accumulated dust).
-
-### **Power System**
-- **Battery:**
-  - **Capacity:** 3500 mAh.
-  - **Operating Time:** 1.2–1.5 hours.
-  - **Charging Time:** 3–5 hours.

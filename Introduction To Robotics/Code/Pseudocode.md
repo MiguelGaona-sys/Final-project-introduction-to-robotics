@@ -1,4 +1,4 @@
-# 🚀 Pseudocode: Reactive Navigation with Cleaning Simulation (logic of the code)
+# Pseudocode: Reactive Navigation with Cleaning Simulation (logic of the code)
 
 ### **1. Initialize Environment:**
 - Define room dimensions as a 2D grid (`mapSize`).

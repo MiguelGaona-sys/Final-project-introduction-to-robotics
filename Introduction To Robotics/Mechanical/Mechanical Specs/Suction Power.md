@@ -17,6 +17,7 @@ To achieve a **suction force of 600 Pa**, we need to consider the relationship b
 ### **Power Equation**
 The power required to generate suction is calculated as:
 P = (ΔP*Q)/η
+
 Where:
 - **P:** Motor power in Watts.  
 - **ΔP:** Suction force (600 Pa).  
@@ -32,9 +33,9 @@ Where:
 - System efficiency: **60% (η = 0.6).**
 
 ### **Substituting into the Formula**
-\[
-P = \frac{\Delta P \times Q}{\eta} = \frac{600 \times 0.03}{0.6} = 30\,\text{W}
-\]
+
+P = (600Pa*0.03m³/s)/0.6= 30 W
+
 
 ---
 
@@ -48,15 +49,15 @@ P = \frac{\Delta P \times Q}{\eta} = \frac{600 \times 0.03}{0.6} = 30\,\text{W}
 
 ### **Impact of Lower Efficiency**
 - If efficiency drops to **50%**, the power requirement increases:
-  \[
-  P = \frac{18}{0.5} = 36\,\text{W}.
-  \]
+  
+  P = 18/0.5 = 36 W
+  
 
 ### **Impact of Increased Airflow**
 - If airflow increases to **40 liters/second (0.04 m³/s)** for better cleaning:
-  \[
-  P = \frac{600 \times 0.04}{0.6} = 40\,\text{W}.
-  \]
+  
+  P = (600*0.04)/0.6 = 40 W
+  
 
 ### **Key Factors Affecting Motor Power**
 - **Fan Design:** Determines how efficiently the fan generates suction.  

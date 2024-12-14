@@ -16,9 +16,7 @@ To achieve a **suction force of 600 Pa**, we need to consider the relationship b
 
 ### **Power Equation**
 The power required to generate suction is calculated as:
-\[
-P = \frac{\Delta P \times Q}{\eta}
-\]
+P = (ΔP*Q)/η
 Where:
 - **P:** Motor power in Watts.  
 - **ΔP:** Suction force (600 Pa).  

@@ -1,0 +1,2 @@
+Mathematical Model in the Code
+The mathematical model of the robot is based on the principles of path planning, navigation, and kinematics, as outlined in Chapters 5 and 6. Below is an explanation of the key components:

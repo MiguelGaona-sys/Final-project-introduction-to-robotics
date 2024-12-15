@@ -97,3 +97,31 @@ if robotPose(1) < 10 && robotPose(2) > 23
 end
 ```
 This logic ensures the robot switches patterns as necessary to achieve full coverage.
+# 4. Collision Detection
+
+**Concepts Used (Chapter 5):**
+- **Obstacle Avoidance:**  
+  The robot checks for collisions using the occupancy grid.  
+- **Boundary Handling:**  
+  The robot detects when it reaches the edges of the room and reverses direction or switches patterns.
+
+---
+
+## **Mathematical Model**
+- Collision detection is based on:
+
+\[
+\text{Collision} = 
+\begin{cases} 
+\text{True} & \text{if } M'(x<sub>\text{next}</sub>, y<sub>\text{next}</sub>) = 1 \\
+\text{False} & \text{otherwise}
+\end{cases}
+\]
+
+- Here, \(M'(x<sub>\text{next}</sub>, y<sub>\text{next}</sub>)\) is the **inflated occupancy grid value** at the robot's next position.
+
+---
+
+## **Implementation in Code**
+- `checkOccupancy(roomMap, nextPose)` is used to determine if the robot's next position will result in a collision.
+

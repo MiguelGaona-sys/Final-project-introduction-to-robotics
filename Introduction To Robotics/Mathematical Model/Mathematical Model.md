@@ -132,11 +132,10 @@ This logic ensures the robot switches patterns as necessary to achieve full cove
 ## **Mathematical Model**
 - Cleaning percentage is calculated as:
 
-\[
-\text{Coverage} = \frac{\sum M_{\text{cleaned}}(x, y)}{\text{Total Grid Cells}}
-\]
+![image](https://github.com/user-attachments/assets/a30f0114-bbce-4ab7-ab0f-820028106d97)
 
-where \( M_{\text{cleaned}}(x, y) = 1 \) for cleaned cells.
+
+where \( M<sub>cleaned</sub>(x, y) = 1 \) for cleaned cells.
 
 ---
 
@@ -147,4 +146,5 @@ where \( M_{\text{cleaned}}(x, y) = 1 \) for cleaned cells.
 gridX = round(robotPose(1) * resolution);
 gridY = round(robotPose(2) * resolution);
 coverageMap(gridY, gridX) = 1;
-
+```
+The simulation ends when `coveredArea >= coverageThreshold`.

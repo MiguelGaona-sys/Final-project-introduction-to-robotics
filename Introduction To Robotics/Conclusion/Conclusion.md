@@ -42,5 +42,3 @@ To further enhance performance, the following improvements could be considered:
 
 ---
 
-## **Summary**
-The project demonstrates a robust and reliable vacuum cleaning robot capable of systematic cleaning, optimized power usage, and effective collision avoidance. By combining intelligent navigation algorithms, efficient kinematics, and power management, the robot achieves a balance between performance and energy efficiency. Future advancements in sensors, algorithms, and power systems can further enhance its adaptability and runtime, making it an even more effective cleaning solution.

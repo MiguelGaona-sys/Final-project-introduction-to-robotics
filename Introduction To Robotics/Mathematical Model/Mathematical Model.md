@@ -43,6 +43,6 @@ The mathematical model of the robot is based on the principles of **path plannin
 
 ## **Implementation in Code**
 - `robotPose` is updated using the equations:
-- **Horizontal zigzag:** \(x_{t+1}\) changes, \(y_t\) remains constant.  
-- **Vertical zigzag:** \(y_{t+1}\) changes, \(x_t\) remains constant.
+- **Horizontal zigzag:** x<sub>t+1</sub> changes, y<sub>t</sub> remains constant.  
+- **Vertical zigzag:** y<sub>t+1</sub> changes, x<sub>t</sub> remains constant.
 

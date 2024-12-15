@@ -47,10 +47,5 @@
 
 ---
 
-## **Conclusion**
-The **6 cm wheel size** strikes the ideal balance between:  
-- **Speed and Control** for effective cleaning.  
-- **Torque Requirements** to avoid motor strain.  
-- **Obstacle Clearance** for smooth mobility.  
-- **Compactness** for optimized space utilization.  
-- **Stability** for reliable operation across various surfaces.
+![image](https://github.com/user-attachments/assets/6ec4cbed-ff83-429a-bba0-2eb18528eb68)
+

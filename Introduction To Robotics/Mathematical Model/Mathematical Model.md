@@ -45,4 +45,54 @@ The mathematical model of the robot is based on the principles of **path plannin
 - `robotPose` is updated using the equations:
 - **Horizontal zigzag:** x<sub>t+1</sub> changes, y<sub>t</sub> remains constant.  
 - **Vertical zigzag:** y<sub>t+1</sub> changes, x<sub>t</sub> remains constant.
+# 3. Path Planning (Zigzag Patterns)
+
+**Concepts Used (Chapter 5):**
+- **Systematic Coverage:**  
+  The zigzag path (both horizontal and vertical) ensures systematic coverage without revisiting the same area unnecessarily.
+- **Boundary Handling:**  
+  Boundary detection ensures the robot reverses direction when hitting walls, ensuring all accessible areas are covered.
+
+---
+
+## **Mathematical Model**
+
+### 1. **Horizontal Zigzag**
+- The robot moves horizontally until it detects a boundary (collision).  
+- The vertical position changes by **Δy = ±1** at the end of each horizontal pass:  
+
+\[
+x<sub>t+1</sub> = x<sub>t</sub> + v · Δt
+\]
+\[
+y<sub>t+1</sub> = y<sub>t</sub> + Δy<sub>step</sub>
+\]
+
+- **x<sub>direction</sub>** reverses upon hitting a boundary.
+
+---
+
+### 2. **Vertical Zigzag**
+- The robot moves vertically until it detects a boundary (collision).  
+- The horizontal position changes by **Δx = ±1** at the end of each vertical pass:
+
+\[
+y<sub>t+1</sub> = y<sub>t</sub> + v · Δt
+\]
+\[
+x<sub>t+1</sub> = x<sub>t</sub> + Δx<sub>step</sub>
+\]
+
+- **y<sub>direction</sub>** reverses upon hitting a boundary.
+
+---
+
+## **Implementation in Code**
+
+Horizontal and vertical zigzag behaviors are alternated dynamically using:
+
+```matlab
+if robotPose(1) < 10 && robotPose(2) > 23
+    currentPattern = "vertical";
+end
 

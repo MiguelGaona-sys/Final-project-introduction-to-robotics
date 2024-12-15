@@ -113,7 +113,7 @@ This logic ensures the robot switches patterns as necessary to achieve full cove
 ![image](https://github.com/user-attachments/assets/2f006012-e845-4232-9d0b-57af85e07f64)
 
 
-- Here, \(M'(x<sub>\text{next}</sub>, y<sub>\text{next}</sub>)\) is the **inflated occupancy grid value** at the robot's next position.
+- Here, **M'**(x<sub>next</sub>, y<sub>next</sub>) is the **inflated occupancy grid value** at the robot's next position.
 
 ---
 

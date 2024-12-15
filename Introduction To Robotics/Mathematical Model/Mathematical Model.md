@@ -119,4 +119,32 @@ This logic ensures the robot switches patterns as necessary to achieve full cove
 
 ## **Implementation in Code**
 - `checkOccupancy(roomMap, nextPose)` is used to determine if the robot's next position will result in a collision.
+# 5. Coverage Completion
+
+**Concepts Used (Chapters 5 and 6):**
+- **Coverage Metrics:**  
+  The simulation ensures cleaning stops only when 100% of the accessible area is covered.
+- **Grid Updates:**  
+  The robot marks each grid cell as cleaned upon visiting it.
+
+---
+
+## **Mathematical Model**
+- Cleaning percentage is calculated as:
+
+\[
+\text{Coverage} = \frac{\sum M_{\text{cleaned}}(x, y)}{\text{Total Grid Cells}}
+\]
+
+where \( M_{\text{cleaned}}(x, y) = 1 \) for cleaned cells.
+
+---
+
+## **Implementation in Code**
+- The robot updates the `coverageMap`:
+
+```matlab
+gridX = round(robotPose(1) * resolution);
+gridY = round(robotPose(2) * resolution);
+coverageMap(gridY, gridX) = 1;
 

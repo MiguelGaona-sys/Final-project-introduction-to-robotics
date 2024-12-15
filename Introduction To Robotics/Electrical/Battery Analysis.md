@@ -24,18 +24,18 @@ To estimate if the **13500mAh battery** is sufficient for powering the wheel mot
 ### **Power Draw per Motor**
 At **12V**, a **12W motor** draws:  
 \[
-\text{Current (I)} = \frac{\text{Power (P)}}{\text{Voltage (V)}} = \frac{12\,\text{W}}{12\,\text{V}} = 1\,\text{A}.
+Current (I) = Power (P)/ Voltage (V) = 12W/12V = 1A
 \]
 
 ### **Total Current for Two Motors**
 \[
-1\,\text{A} \times 2 = 2\,\text{A}.
+1 A×2= 2 A.
 \]
 
 ### **Runtime for Wheel Motors**
 A **13500mAh battery (13.5Ah)** can power the wheels for:  
 \[
-\text{Runtime (hours)} = \frac{\text{Battery Capacity (Ah)}}{\text{Current (I)}} = \frac{13.5\,\text{Ah}}{2\,\text{A}} = 6.75\,\text{hours}.
+Runtime ( Hours ) = Battery capacity (Ah)/Current (I) = 13.5(Ah)/2A = 6.75 hours.
 \]
 
 ---
@@ -48,18 +48,18 @@ A **13500mAh battery (13.5Ah)** can power the wheels for:
 ### **Power Draw per Motor**
 At **12V**, a **5W motor** draws:  
 \[
-\text{Current (I)} = \frac{\text{Power (P)}}{\text{Voltage (V)}} = \frac{5\,\text{W}}{12\,\text{V}} = 0.4166\,\text{A}.
+Current (I) = Power (P)/ Voltage (V) = 5W/12V = 0.4166A
 \]
 
 ### **Total Current for Two Motors**
 \[
-0.4166\,\text{A} \times 2 = 0.833\,\text{A}.
+0.4166 A×2= 0.833 A.
 \]
 
 ### **Runtime for Brush Motors**
 A **13500mAh battery (13.5Ah)** can power the brush motors for:  
 \[
-\text{Runtime (hours)} = \frac{\text{Battery Capacity (Ah)}}{\text{Current (I)}} = \frac{13.5\,\text{Ah}}{0.833\,\text{A}} = 16.2\,\text{hours}.
+Runtime ( Hours ) = Battery capacity (Ah)/Current (I) = 13.5(Ah)/0.833A = 16.2 hours.
 \]
 
 ---
@@ -72,13 +72,13 @@ A **13500mAh battery (13.5Ah)** can power the brush motors for:
 ### **Power Draw per Motor**
 At **12V**, a **30W motor** draws:  
 \[
-\text{Current (I)} = \frac{\text{Power (P)}}{\text{Voltage (V)}} = \frac{30\,\text{W}}{12\,\text{V}} = 2.5\,\text{A}.
+Current (I) = Power (P)/ Voltage (V) = 30W/12V = 2.5A
 \]
 
 ### **Runtime for Suction Motor**
 A **13500mAh battery (13.5Ah)** can power the suction motor for:  
 \[
-\text{Runtime (hours)} = \frac{\text{Battery Capacity (Ah)}}{\text{Current (I)}} = \frac{13.5\,\text{Ah}}{2.5\,\text{A}} = 5.4\,\text{hours}.
+Runtime ( Hours ) = Battery capacity (Ah)/Current (I) = 13.5(Ah)/2.5A = 5.4hours
 \]
 
 ---
@@ -87,18 +87,18 @@ A **13500mAh battery (13.5Ah)** can power the suction motor for:
 If the suction motor, wheel motors, and brush motors are powered by the same **13500mAh battery**, the total runtime depends on the combined current draw:
 
 ### **Total Current Draw Estimate**
-- **Suction Motor:** 2.5A.  
+- **Suction Motor:** I= 30W/12V = 2.5A.  
 - **Wheel Motors:** 2A.  
 - **Brush Motors:** 0.833A.  
 
 ### **Total Current**
 \[
-I_{\text{total}} = 2.5\,\text{A} + 2\,\text{A} + 0.833\,\text{A} = 5.33\,\text{A}.
+I(total) = 2.5A + 2A + 0.8333= 5.33A
 \]
 
 ### **Runtime with 13500mAh Battery**
 \[
-\text{Runtime (hours)} = \frac{\text{Battery Capacity (Ah)}}{\text{Total Current (I)}} = \frac{13.5\,\text{Ah}}{5.33\,\text{A}} = 2.5\,\text{hours}.
+Runtime(real) = 13.5Ah/ 5.33A = 2.5 hours.
 \]
 
 ---

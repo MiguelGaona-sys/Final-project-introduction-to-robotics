@@ -95,4 +95,5 @@ Horizontal and vertical zigzag behaviors are alternated dynamically using:
 if robotPose(1) < 10 && robotPose(2) > 23
     currentPattern = "vertical";
 end
-
+```
+This logic ensures the robot switches patterns as necessary to achieve full coverage.

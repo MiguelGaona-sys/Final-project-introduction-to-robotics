@@ -34,8 +34,8 @@ The total height of **8.45 cm** is the result of:
   - Most furniture has a clearance of **8–10 cm**. At 8.45 cm, the robot easily cleans under sofas, beds, and coffee tables.  
 - **Internal Component Space:**  
   - Accommodates essential components:  
-    - **Suction Motor** (30–50W) for debris collection.  
-    - **Battery Pack** (3000–5000 mAh) for extended runtime.  
+    - **Suction Motor**  for debris collection.  
+    - **Battery Pack**  for extended runtime.  
     - **Brush System** for efficient sweeping and cleaning.  
 - **Ground Clearance:**  
   - A **0.95 cm clearance** allows the robot to navigate small obstacles like rugs, cords, and thresholds while maintaining stability.  

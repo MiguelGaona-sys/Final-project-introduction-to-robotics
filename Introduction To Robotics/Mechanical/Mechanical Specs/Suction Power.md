@@ -45,23 +45,3 @@ P = (600Pa*0.03m³/s)/0.6= 30 W
 
 ---
 
-## 4. **Design Considerations**
-
-### **Impact of Lower Efficiency**
-- If efficiency drops to **50%**, the power requirement increases:
-  
-  P = 18/0.5 = 36 W
-  
-
-### **Impact of Increased Airflow**
-- If airflow increases to **40 liters/second (0.04 m³/s)** for better cleaning:
-  
-  P = (600*0.04)/0.6 = 40 W
-  
-
-### **Key Factors Affecting Motor Power**
-- **Fan Design:** Determines how efficiently the fan generates suction.  
-- **Motor Type:** Impacts power output and energy consumption.  
-- **System Layout:** Influences airflow resistance and overall efficiency.
-
----

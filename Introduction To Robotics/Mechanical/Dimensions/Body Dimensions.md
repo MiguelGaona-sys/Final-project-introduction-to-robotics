@@ -53,3 +53,10 @@ The combination of **27 cm diameter** and **8.45 cm height** provides a perfect 
 5. **Aesthetic Design:** Compact and sleek, blending seamlessly into home environments.
 
 ---
+![image](https://github.com/user-attachments/assets/9bc23d78-74d5-4154-8ff7-f54c5e20bed1)
+![image](https://github.com/user-attachments/assets/71a1a83b-37ac-4b18-b441-9944450bc785)
+![image](https://github.com/user-attachments/assets/d51e04cc-0b2a-421b-be57-df65c8ce4c12)
+![image](https://github.com/user-attachments/assets/f7d82b30-6331-48d1-b597-3bd5e56eab4f)
+
+
+

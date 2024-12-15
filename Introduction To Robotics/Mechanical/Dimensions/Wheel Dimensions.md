@@ -13,7 +13,7 @@
 
 ## **2. Sufficient Torque for Mobility**
 - **Why:**  
-  Torque (\( T = F \cdot r \)) determines the force needed to move the robot. Smaller wheels increase torque demand, while larger wheels reduce it. A **6 cm wheel** offers the right balance.  
+  Torque (\( T=F⋅r \)) determines the force needed to move the robot. Smaller wheels increase torque demand, while larger wheels reduce it. A **6 cm wheel** offers the right balance.  
 - **Advantages:**  
   - Motors operate efficiently with minimal strain (~1 Nm torque).  
   - Handles small obstacles (1–2 cm) and transitions between surfaces reliably.

@@ -24,7 +24,7 @@ The mathematical model of the robot is based on the principles of **path plannin
 # 2. Robot's Pose Representation
 
 **Concepts Used (Chapter 6):**
-- **Pose:** The robot's state is represented as a 3-tuple \((x, y, \theta)\), where \(x, y\) are the robot's coordinates, and \(\theta\) is its orientation (heading angle).
+- **Pose:** The robot's state is represented as a 3-tuple \((x, y, \θ)\), where \(x, y\) are the robot's coordinates, and \(\θ\) is its orientation (heading angle).
 
 ---
 

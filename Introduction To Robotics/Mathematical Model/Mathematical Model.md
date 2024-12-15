@@ -21,3 +21,34 @@ The mathematical model of the robot is based on the principles of **path plannin
 ### **Implementation in Code:**
 - `binaryOccupancyMap` is used to define the room.  
 - `inflate` function ensures the inflated safety margin around walls and obstacles.
+# 2. Robot's Pose Representation
+
+**Concepts Used (Chapter 6):**
+- **Pose:** The robot's state is represented as a 3-tuple \((x, y, \theta)\), where \(x, y\) are the robot's coordinates, and \(\theta\) is its orientation (heading angle).
+
+---
+
+## **Mathematical Model**
+- The robot's position and orientation are updated using the **differential drive kinematic equations**:
+
+\[
+x_{t+1} = x_t + v \cos(\theta) \Delta t
+\]
+\[
+y_{t+1} = y_t + v \sin(\theta) \Delta t
+\]
+\[
+\theta_{t+1} = \theta_t + \omega \Delta t
+\]
+
+**Where:**
+- \(v\): Linear velocity  
+- \(\omega\): Angular velocity  
+- \(\Delta t\): Time step  
+
+---
+
+## **Implementation in Code**
+- `robotPose` is updated using the equations:
+  - **Horizontal zigzag:** \(x_{t+1}\) changes, \(y_t\) remains constant.  
+  - **Vertical zigzag:** \(y_{t+1}\) changes, \(x_t\) remains constant.

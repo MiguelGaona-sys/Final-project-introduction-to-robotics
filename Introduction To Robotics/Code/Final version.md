@@ -42,7 +42,7 @@
   Basic position updates without realistic motion dynamics.  
 - **Final Version:**  
   Utilizes **differential drive kinematics**:  
-  - Updates robot pose \((x, y, \theta)\) using **linear velocity** and **heading angle**.  
+  - Updates robot pose \((x, y, θ)\) using **linear velocity** and **heading angle**.  
   - Prevents wall crossing through accurate **collision detection** and **inflation of obstacles** to account for the robot's radius.
 ## MATLAB Code
 Below is the MATLAB code implementing the enhanced functionality:

@@ -31,15 +31,8 @@ The mathematical model of the robot is based on the principles of **path plannin
 ## **Mathematical Model**
 - The robot's position and orientation are updated using the **differential drive kinematic equations**:
 
-\[
-x_{t+1} = x_t + v \cos(\theta) \Delta t
-\]
-\[
-y_{t+1} = y_t + v \sin(\theta) \Delta t
-\]
-\[
-\theta_{t+1} = \theta_t + \omega \Delta t
-\]
+![image](https://github.com/user-attachments/assets/ab5888a8-5a1a-4e4c-8792-66e6425a4663)
+
 
 **Where:**
 - \(v\): Linear velocity  

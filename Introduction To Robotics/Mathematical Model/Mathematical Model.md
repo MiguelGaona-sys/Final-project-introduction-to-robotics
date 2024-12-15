@@ -36,8 +36,8 @@ The mathematical model of the robot is based on the principles of **path plannin
 
 **Where:**
 - \(ν\): Linear velocity  
-- \(\Ω\): Angular velocity  
-- \(\Δ t\): Time step  
+- \(Ω\): Angular velocity  
+- \(Δ t\): Time step  
 
 ---
 

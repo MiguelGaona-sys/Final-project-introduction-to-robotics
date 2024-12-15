@@ -54,9 +54,7 @@
 
 3. **Check for Cleaning Completion:**
    - Calculate cleaned area percentage:  
-     \[
-     \text{coveredArea} = \frac{\text{number of cleaned cells}}{\text{total cells}}
-     \]
+     coveredArea = (number of cleaned cells) / (total cells)
    - If `coveredArea >= coverageThreshold`, stop the simulation.
 
 4. **Decrement `maxIterations` Counter.**

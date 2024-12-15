@@ -29,5 +29,6 @@
 5. **Motors:**
    - **Servo Motors M1 and M2:** Control the **mobility** (wheels) of the robot.
    - **Vacuum Motor:** Drives the suction system for cleaning.
+--
                                                   ![image](https://github.com/user-attachments/assets/07ceb642-cb30-473f-abd0-115258355c0c)
 

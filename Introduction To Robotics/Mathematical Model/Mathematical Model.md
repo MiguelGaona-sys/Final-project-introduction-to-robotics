@@ -110,13 +110,8 @@ This logic ensures the robot switches patterns as necessary to achieve full cove
 ## **Mathematical Model**
 - Collision detection is based on:
 
-\[
-\text{Collision} = 
-\begin{cases} 
-\text{True} & \text{if } M'(x<sub>\text{next}</sub>, y<sub>\text{next}</sub>) = 1 \\
-\text{False} & \text{otherwise}
-\end{cases}
-\]
+![image](https://github.com/user-attachments/assets/2f006012-e845-4232-9d0b-57af85e07f64)
+
 
 - Here, \(M'(x<sub>\text{next}</sub>, y<sub>\text{next}</sub>)\) is the **inflated occupancy grid value** at the robot's next position.
 

@@ -65,5 +65,3 @@ P = (600Pa*0.03m³/s)/0.6= 30 W
 - **System Layout:** Influences airflow resistance and overall efficiency.
 
 ---
-
-This analysis highlights that **fan design**, **system efficiency**, and **airflow requirements** are critical in optimizing motor power for a vacuum robot.

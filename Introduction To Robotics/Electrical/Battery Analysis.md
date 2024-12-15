@@ -1,5 +1,5 @@
 # Power Consumption and Battery Analysis
-
+ 
 ---
 
 ## **1. Separate Powering for Efficiency**

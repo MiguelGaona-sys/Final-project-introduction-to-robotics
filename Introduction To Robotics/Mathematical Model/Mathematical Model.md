@@ -13,13 +13,8 @@ The mathematical model of the robot is based on the principles of **path plannin
 - The grid is represented as \( M(x, y) \), where \( M(x, y) = 1 \) indicates a wall or obstacle, and \( M(x, y) = 0 \) indicates a free space.  
 - Inflation ensures that the robot does not come closer than its radius \( r \) to any wall, represented as:
 
-\[
-M'(x, y) =
-\begin{cases} 
-1 & \text{if } \sqrt{(x - x_{\text{wall}})^2 + (y - y_{\text{wall}})^2} \leq r \\
-0 & \text{otherwise}
-\end{cases}
-\]
+![image](https://github.com/user-attachments/assets/52592e14-8280-4960-a29c-6a91a73cd873)
+
 
 ---
 

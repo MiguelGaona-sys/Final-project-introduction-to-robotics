@@ -1,66 +1,79 @@
-# Pseudocode: Reactive Navigation with Cleaning Simulation (logic of the code)
+# Pseudocode: Roomba Robot Simulation with Zigzag Path Planning
 
-### **1. Initialize Environment:**
-- Define room dimensions as a 2D grid (`mapSize`).
-- Set all grid cells as dirty (`0 = dirty`, `1 = cleaned`).
-- Place robot at an initial position `(x, y)` with a random orientation (`theta`).
-- Define simulation parameters:
-  - Velocity (`v`).
-  - Angular velocity (`omega`).
-  - Time step (`dt`).
-  - Obstacle detection range (`D_min`).
+## **Initialization**
+1. **Set Room Parameters:**
+   - Define room dimensions `mapSize` and resolution.
+   - Set `robotRadius` for collision safety.
 
----
+2. **Create Binary Occupancy Map:**
+   - Set outer walls and static vertical walls.
+   - Inflate walls by `robotRadius` for safety.
 
-### **2. Set Obstacles:**
-- Randomly place obstacles in the room (coordinates stored in `obstacles`).
+3. **Initialize Coverage Map:**
+   - `coverageMap` is a grid to track cleaned cells.
 
----
+4. **Robot Parameters:**
+   - Initial pose: `robotPose = [x, y, θ]`.
+   - Set `linearSpeed` and `sampleTime`.
 
-### **3. Initialize Visualization:**
-- Create a plot to display:
-  - The robot's position.
-  - Path.
-  - Obstacles.
-- Use markers to dynamically show:
-  - The robot.
-  - Its cleaning path.
+5. **Visualization Setup:**
+   - Display the room map.
+   - Initialize robot and path visualization.
 
 ---
 
-### **4. Begin Simulation Loop (for a fixed number of iterations):**
-1. **Update Cleaning Map:**
-   - Mark the robot's current position as cleaned.
+## **Simulation Logic**
+- **Set Initial Pattern:**  
+   `currentPattern = "horizontal"`
 
-2. **Obstacle Detection:**
-   - Check the distance to all obstacles.
-   - If an obstacle is within the detection range:
-     - Set `obstacleDetected = True`.
-   - Otherwise, proceed as normal.
+- **Initialize Movement Variables:**  
+   - `yStep`: Vertical step direction (-1).  
+   - `xStep`: Horizontal step direction (1).  
+   - `xDirection`: Horizontal movement direction (right).
 
-3. **Reactive Behavior:**
-   - If an obstacle is detected:
-     - Change orientation (`theta`) to avoid collision (randomized).
-   - Occasionally introduce random direction changes for better coverage.
+### **Simulation Loop (Until maxIterations or full coverage):**
+1. **Check Condition to Switch to Vertical Zigzag:**
+   - If `robotPose.x < 10` and `robotPose.y > 23` → Switch to `vertical` pattern.
 
-4. **Update Position Using Kinematics:**
-   - Calculate the new position `(x, y)` based on current velocity and orientation.
+2. **Zigzag Movement:**
+   - **If currentPattern = "horizontal":**
+     - Move horizontally while no obstacle is detected:
+       - Update `robotPose.x`.
+       - Mark cell as cleaned in `coverageMap`.
+       - Update visualization.
+     - Stop at boundary and move vertically by `yStep`.
+     - Reverse `xDirection` for the next horizontal pass.
 
-5. **Boundary Conditions:**
-   - Ensure the robot stays within the room:
-     - Adjust orientation and position if it moves out of bounds.
+   - **If currentPattern = "vertical":**
+     - Move vertically while no obstacle is detected:
+       - Update `robotPose.y`.
+       - Mark cell as cleaned in `coverageMap`.
+       - Update visualization.
+     - Stop at boundary and move horizontally by `xStep`.
+     - Reverse `yStep` for the next vertical pass.
 
-6. **Store and Update Path:**
-   - Append the new position to the path history for visualization.
+3. **Check for Cleaning Completion:**
+   - Calculate cleaned area percentage:  
+     \[
+     \text{coveredArea} = \frac{\text{number of cleaned cells}}{\text{total cells}}
+     \]
+   - If `coveredArea >= coverageThreshold`, stop the simulation.
 
-7. **Update Visualization:**
-   - Refresh the robot’s position and path on the plot.
+4. **Decrement `maxIterations` Counter.**
 
 ---
 
-### **5. Post-Simulation Visualization:**
-- Display the final cleaning map with:
-  - Cleaned areas.
-  - Uncleaned areas.
+## **End of Simulation**
+1. Display message: `"Cleaning complete!"`
+2. Visualize the final coverage map.
 
 ---
+
+## **Notes:**
+- **Collision Detection:**  
+   Uses `checkOccupancy()` to check for obstacles and walls.
+- **Boundary Handling:**  
+   Reverses directions (`xStep`, `yStep`, `xDirection`) to avoid crossing walls.
+- **Visualization:**  
+   Updates robot’s path in real-time and displays a final cleaned map.
+

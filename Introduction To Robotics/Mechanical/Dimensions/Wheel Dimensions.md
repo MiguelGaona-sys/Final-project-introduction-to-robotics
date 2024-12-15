@@ -4,7 +4,7 @@
 
 ## **1. Balanced Speed and Control**
 - **Why:**  
-  The wheel size directly affects the robot's **linear speed** (\( v = r \cdot \omega \)). A **6 cm wheel** provides moderate speed at typical motor speeds (60–100 RPM), ideal for cleaning.  
+  The wheel size directly affects the robot's **linear speed** (\(v=r⋅ω\)). A **6 cm wheel** provides moderate speed at typical motor speeds (60–100 RPM), ideal for cleaning.  
 - **Advantages:**  
   - Covers large areas efficiently without moving too fast.  
   - Maintains precise movement for effective debris collection.

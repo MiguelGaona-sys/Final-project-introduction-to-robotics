@@ -20,4 +20,4 @@ This project involves designing and simulating an **autonomous robot** capable o
 - CAD tools for physical modeling
 - Path-planning algorithms for efficient navigation
 
-> **Note:** This project highlights the intersection of robotics, mathematical modeling, and simulation.
+
